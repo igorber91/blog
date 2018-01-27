@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Sin título 1</title>
+<!-- Javascript tiene unos caracteres diferentes
+ -->
+ <script type="text/javascript">
+ 
+ 
+ 
+function mostrar(parrafos){
+
+var  texto= document.form1.nombre.value;
+var texto2= document.form2.nombre.value;
+
+alert(texto+texto2);
+
+} 
+
+function mostrarMensaje(){
+var texto3= document.form3.nombre2.value;
+document.write("hola "+ texto3);
+}
+
+
+ function fsuma(numero1,numero2){
+ 	var numero1= parseInt(document.form1.input1.value);
+var numero2= parseInt(document.form1.input1.value);
+console.log(numero1);
+console.log(numero2);
+
+ var valor1=document.form1.input1.value;
+  alert(valor1);
+
+ var valor2=document.form1.input2.value;
+   alert(valor2);
+ var valor3=valor1+valor2;
+   alert(valor3);
+}
+
+</script>
+
+</head>
+
+<body>
+
+
+<form name="form3" >
+
+
+<input name="nombre2" type="text"/>
+<input name="boton" type="button" value="Igor" onclick="mostrarMensaje()"/>
+</form>
+
+
+<form name="form1"  >
+<input type="text" name="input1"    />
+<input type="text" name="input2"    />
+<input type="button" value="" onclick="fsuma()"/>
+</form>
+
+</body>
+
+
+</html>
